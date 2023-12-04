@@ -126,7 +126,7 @@
 		</useresultsviewfilters>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="running">ExplorerRun.0
+		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
 			<checkpoint>
 				<jobcontrolmode>LSCS</jobcontrolmode>
 				<corners>
