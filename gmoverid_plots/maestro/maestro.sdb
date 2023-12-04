@@ -23,7 +23,7 @@
 						<value>gmoverid_plots</value>
 					</option>
 					<option>lib
-						<value>mmWaveICDesignProject</value>
+						<value>Project</value>
 					</option>
 					<option>view
 						<value>schematic</value>
@@ -34,7 +34,7 @@
 						<value>100n</value>
 					</var>
 					<var>Wn
-						<value>1u</value>
+						<value>21u</value>
 					</var>
 					<var>Lp
 						<value>100n</value>
@@ -255,7 +255,7 @@
 								<value>gmoverid_plots</value>
 							</option>
 							<option>lib
-								<value>mmWaveICDesignProject</value>
+								<value>Project</value>
 							</option>
 							<option>view
 								<value>schematic</value>
@@ -266,7 +266,7 @@
 								<value>100n</value>
 							</var>
 							<var>Wn
-								<value>1u</value>
+								<value>21u</value>
 							</var>
 							<var>Lp
 								<value>100n</value>
@@ -516,21 +516,21 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Nov 29 18:17:11 2023</timestamp>
-			<uuid>{7f07fbe9-eea6-46f7-ab7c-1ea75f58a728}</uuid>
-			<resultsname>/homes/user/stud/fall23/pf2459/Documents/mmWaveICDesign/Project/iplRefKit_v1_0_feb_23_10/mmWaveICDesignProject/gmoverid_plots/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
+			<timestamp>Dec 3 19:24:22 2023</timestamp>
+			<uuid>{2db0139c-46e1-444e-ba38-6e9fc61e41f7}</uuid>
+			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadpc19_pf2459_181711979</localpsfdir>
-			<psfdir>/homes/user/stud/fall23/pf2459/simulation/mmWaveICDesignProject/gmoverid_plots/maestro/results/maestro/ExplorerRun.0</psfdir>
-			<simdir>$AXL_PROJECT_DIR/mmWaveICDesignProject/gmoverid_plots/maestro/results/maestro/ExplorerRun.0</simdir>
+			<localpsfdir>/tmp/cadpc26_fps2116_192422998</localpsfdir>
+			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<loggingdatabasedir>/homes/user/stud/fall23/pf2459/Documents/mmWaveICDesign/Project/iplRefKit_v1_0_feb_23_10/mmWaveICDesignProject/gmoverid_plots/maestro/results/maestro</loggingdatabasedir>
-			<runlog>/homes/user/stud/fall23/pf2459/Documents/mmWaveICDesign/Project/iplRefKit_v1_0_feb_23_10/mmWaveICDesignProject/gmoverid_plots/maestro/results/maestro/ExplorerRun.0.log</runlog>
+			<loggingdatabasedir>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/gmoverid_plots/maestro/results/maestro</loggingdatabasedir>
+			<runlog>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>

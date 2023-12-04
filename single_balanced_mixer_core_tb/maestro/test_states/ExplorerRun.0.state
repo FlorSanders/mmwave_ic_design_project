@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<statedb ICVersion="IC6.1.8-64b.500.27" modifiedTime="12/03/2023 19:24:28" version="5">active
-	<Test Name="DAMSIC_2023_gmoverid_plots_1">
+<statedb ICVersion="IC6.1.8-64b.500.27" modifiedTime="12/03/2023 19:32:17" version="5">ExplorerRun.0
+	<Test Name="Project_single_balanced_mixer_core_tb_1">
 		<component Name="adeInfo" Type="skillTable">adeinfo
-			<field Name="designInfo" Type="list">("Project" "gmoverid_plots" "schematic" "spectre")</field>
-			<field Name="projectDir" Type="string">"/homes/user/stud/fall23/fps2116/simulation/Project/gmoverid_plots/maestro/results/maestro/.tmpADEDir_fps2116/DAMSIC_2023_gmoverid_plots_1/simulation"</field>
+			<field Name="designInfo" Type="list">("Project" "single_balanced_mixer_core_tb" "schematic" "spectre")</field>
+			<field Name="projectDir" Type="string">"/homes/user/stud/fall23/fps2116/simulation/Project/single_balanced_mixer_core_tb/maestro/results/maestro/.tmpADEDir_fps2116/Project_single_balanced_mixer_core_tb_1/simulation"</field>
 			<field Name="descriptiontext" Type="string">"None"</field>
 		</component>
 		<component Name="rfstim" Type="skillTable">rfstim</component>
@@ -43,23 +43,23 @@
 						<field Name="enable" Type="list">(t)</field>
 						<field Name="saveOppoint" Type="symbol">t</field>
 						<field Name="hysteresis" Type="list">nil</field>
-						<field Name="sweep" Type="string">"Design Variable"</field>
+						<field Name="sweep" Type="string">""</field>
 						<field Name="dev" Type="string">""</field>
 						<field Name="deviceParam" Type="string">""</field>
 						<field Name="mod" Type="string">""</field>
 						<field Name="modelParam" Type="string">""</field>
-						<field Name="designVar" Type="string">"VGSn"</field>
-						<field Name="param" Type="string">"VGSn"</field>
+						<field Name="designVar" Type="string">""</field>
+						<field Name="param" Type="string">""</field>
 						<field Name="rangeType" Type="string">"Start-Stop"</field>
 						<field Name="sweepChange" Type="list">nil</field>
-						<field Name="start" Type="string">"0"</field>
-						<field Name="stop" Type="string">"1"</field>
+						<field Name="start" Type="string">""</field>
+						<field Name="stop" Type="string">""</field>
 						<field Name="center" Type="string">""</field>
 						<field Name="span" Type="string">""</field>
-						<field Name="incrType" Type="string">"Linear"</field>
+						<field Name="incrType" Type="string">"Automatic"</field>
 						<field Name="stepTypeLin" Type="string">"Step Size"</field>
 						<field Name="stepTypeLog" Type="string">"Points Per Decade"</field>
-						<field Name="step" Type="string">"10m"</field>
+						<field Name="step" Type="string">""</field>
 						<field Name="lin" Type="string">""</field>
 						<field Name="dec" Type="string">""</field>
 						<field Name="log" Type="string">""</field>
@@ -309,44 +309,23 @@
 		</component>
 		<component Name="mtsSetup" Type="skillTable">mtsSetup
 			<field Name="mtsMode" Type="list">nil</field>
-			<field Name="mtsOptions" Type="list">nil</field>
+			<field Name="mtsOptions" Type="list">(nil)</field>
 		</component>
 		<component Name="opPoints" Type="skillTable">opPoints
-			<field Name="opPoints" Type="skillList">
-				<field Name="opPoints_0" Type="defstruct">sevOpPointStruct
-					<field Name="fullName" Type="string">"/NM0"</field>
-					<field Name="opPoints" Type="string">"gm gds gmoverid cgg vth"</field>
-					<field Name="cellName" Type="string">"nmos4"</field>
-					<field Name="libName" Type="string">"analogLib"</field>
-					<field Name="plotOp" Type="list">nil</field>
-					<field Name="saveOp" Type="symbol">t</field>
-					<field Name="index" Type="fixnum">29</field>
-					<field Name="inLastSet" Type="list">nil</field>
-				</field>
-				<field Name="opPoints_1" Type="defstruct">sevOpPointStruct
-					<field Name="fullName" Type="string">"/PM0"</field>
-					<field Name="opPoints" Type="string">"gm gds gmoverid cgg vth"</field>
-					<field Name="cellName" Type="string">"pmos4"</field>
-					<field Name="libName" Type="string">"analogLib"</field>
-					<field Name="plotOp" Type="list">nil</field>
-					<field Name="saveOp" Type="symbol">t</field>
-					<field Name="index" Type="fixnum">30</field>
-					<field Name="inLastSet" Type="list">nil</field>
-				</field>
-			</field>
+			<field Name="opPoints" Type="list">nil</field>
 		</component>
 		<component Name="otherInfo" Type="skillTable">otherInfo</component>
 		<component Name="outputs" Type="skillTable">outputs
 			<partition Name="outputsCommon">
 				<field Name="outputList" Type="skillList">
 					<field Name="outputList_0" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"Vth,n"</field>
-						<field Name="expression" Type="list">OS("/NM0" "vth")</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M1" "id")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -361,7 +340,7 @@
 						<field Name="type" Type="list">nil</field>
 						<field Name="areaTable" Type="list">nil</field>
 						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
+						<field Name="value" Type="flonum">0.002068452</field>
 						<field Name="plot" Type="symbol">t</field>
 						<field Name="save" Type="list">nil</field>
 						<field Name="march" Type="list">nil</field>
@@ -373,17 +352,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"Vth,n"</field>
-						<field Name="inValidObject" Type="list">(nil "Vth,n")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M1\" \"id\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_1" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"|Vth,p|"</field>
-						<field Name="expression" Type="list">abs(OS("/PM0" "vth"))</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M1" "gm")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -398,8 +377,8 @@
 						<field Name="type" Type="list">nil</field>
 						<field Name="areaTable" Type="list">nil</field>
 						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
+						<field Name="value" Type="flonum">0.0</field>
+						<field Name="plot" Type="symbol">t</field>
 						<field Name="save" Type="list">nil</field>
 						<field Name="march" Type="list">nil</field>
 						<field Name="implicit" Type="list">nil</field>
@@ -410,17 +389,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"|Vth,p|"</field>
-						<field Name="inValidObject" Type="list">(nil "|Vth,p|")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M1\" \"gm\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_2" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"IDn"</field>
-						<field Name="expression" Type="list">IS("/NM0/D")</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M1" "gmoverid")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -435,7 +414,7 @@
 						<field Name="type" Type="list">nil</field>
 						<field Name="areaTable" Type="list">nil</field>
 						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
+						<field Name="value" Type="flonum">-0.2824853</field>
 						<field Name="plot" Type="symbol">t</field>
 						<field Name="save" Type="list">nil</field>
 						<field Name="march" Type="list">nil</field>
@@ -447,17 +426,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"IDn"</field>
-						<field Name="inValidObject" Type="list">(nil "IDn")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M1\" \"gmoverid\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_3" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"|IDp|"</field>
-						<field Name="expression" Type="list">abs(IS("/PM0/D"))</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M1" "cgg")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -472,8 +451,8 @@
 						<field Name="type" Type="list">nil</field>
 						<field Name="areaTable" Type="list">nil</field>
 						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
+						<field Name="value" Type="flonum">5.325555e-14</field>
+						<field Name="plot" Type="symbol">t</field>
 						<field Name="save" Type="list">nil</field>
 						<field Name="march" Type="list">nil</field>
 						<field Name="implicit" Type="list">nil</field>
@@ -484,17 +463,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"|IDp|"</field>
-						<field Name="inValidObject" Type="list">(nil "|IDp|")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M1\" \"cgg\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_4" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"gm,n"</field>
-						<field Name="expression" Type="list">OS("/NM0" "gm")</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M1" "cdd")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -509,7 +488,7 @@
 						<field Name="type" Type="list">nil</field>
 						<field Name="areaTable" Type="list">nil</field>
 						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
+						<field Name="value" Type="flonum">8.271867e-14</field>
 						<field Name="plot" Type="symbol">t</field>
 						<field Name="save" Type="list">nil</field>
 						<field Name="march" Type="list">nil</field>
@@ -521,17 +500,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"gm,n"</field>
-						<field Name="inValidObject" Type="list">(nil "gm,n")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M1\" \"cdd\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_5" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"gm,p"</field>
-						<field Name="expression" Type="list">OS("/PM0" "gm")</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M1" "css")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -546,8 +525,8 @@
 						<field Name="type" Type="list">nil</field>
 						<field Name="areaTable" Type="list">nil</field>
 						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
+						<field Name="value" Type="flonum">5.44883e-14</field>
+						<field Name="plot" Type="symbol">t</field>
 						<field Name="save" Type="list">nil</field>
 						<field Name="march" Type="list">nil</field>
 						<field Name="implicit" Type="list">nil</field>
@@ -558,17 +537,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"gm,p"</field>
-						<field Name="inValidObject" Type="list">(nil "gm,p")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M1\" \"css\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_6" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"1/gds,n"</field>
-						<field Name="expression" Type="list">(1 / OS("/NM0" "gds"))</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M2" "id")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -595,17 +574,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"1/gds,n"</field>
-						<field Name="inValidObject" Type="list">(nil "1/gds,n")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M2\" \"id\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_7" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"1/gds,p"</field>
-						<field Name="expression" Type="list">(1 / OS("/PM0" "gds"))</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M2" "gm")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -621,7 +600,7 @@
 						<field Name="areaTable" Type="list">nil</field>
 						<field Name="selectionDetail" Type="list">nil</field>
 						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
 						<field Name="save" Type="list">nil</field>
 						<field Name="march" Type="list">nil</field>
 						<field Name="implicit" Type="list">nil</field>
@@ -632,17 +611,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"1/gds,p"</field>
-						<field Name="inValidObject" Type="list">(nil "1/gds,p")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M2\" \"gm\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_8" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"gm/ID,n"</field>
-						<field Name="expression" Type="list">OS("/NM0" "gmoverid")</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M2" "gmoverid")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -669,17 +648,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"gm/ID,n"</field>
-						<field Name="inValidObject" Type="list">(nil "gm/ID,n")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M2\" \"gmoverid\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_9" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"gm/ID,p"</field>
-						<field Name="expression" Type="list">OS("/PM0" "gmoverid")</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M2" "cgg")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -695,7 +674,7 @@
 						<field Name="areaTable" Type="list">nil</field>
 						<field Name="selectionDetail" Type="list">nil</field>
 						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
 						<field Name="save" Type="list">nil</field>
 						<field Name="march" Type="list">nil</field>
 						<field Name="implicit" Type="list">nil</field>
@@ -706,17 +685,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"gm/ID,p"</field>
-						<field Name="inValidObject" Type="list">(nil "gm/ID,p")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M2\" \"cgg\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_10" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"fT,n"</field>
-						<field Name="expression" Type="list">(OS("/NM0" "gm") / (2 * pi * OS("/NM0" "cgg")))</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M2" "cdd")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -743,17 +722,17 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"fT,n"</field>
-						<field Name="inValidObject" Type="list">(nil "fT,n")</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M2\" \"cdd\")"</field>
+						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 					<field Name="outputList_11" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"fT,p"</field>
-						<field Name="expression" Type="list">(OS("/PM0" "gm") / (2 * pi * OS("/PM0" "cgg")))</field>
+						<field Name="name" Type="list">nil</field>
+						<field Name="expression" Type="list">OP("/I0/M2" "css")</field>
 						<field Name="signal" Type="list">nil</field>
 						<field Name="scriptFile" Type="list">nil</field>
 						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
 						<field Name="internalName" Type="list">nil</field>
 						<field Name="masterName" Type="list">nil</field>
 						<field Name="masterScriptFile" Type="list">nil</field>
@@ -769,7 +748,7 @@
 						<field Name="areaTable" Type="list">nil</field>
 						<field Name="selectionDetail" Type="list">nil</field>
 						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
 						<field Name="save" Type="list">nil</field>
 						<field Name="march" Type="list">nil</field>
 						<field Name="implicit" Type="list">nil</field>
@@ -780,599 +759,7 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"fT,p"</field>
-						<field Name="inValidObject" Type="list">(nil "fT,p")</field>
-					</field>
-					<field Name="outputList_12" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"(Aintr,n)dB"</field>
-						<field Name="expression" Type="list">dB20((OS("/NM0" "gm") / OS("/NM0" "gds")))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="symbol">t</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">13</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"(Aintr,n)dB"</field>
-						<field Name="inValidObject" Type="list">(nil "(Aintr,n)dB")</field>
-					</field>
-					<field Name="outputList_13" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"(Aintr,p)dB"</field>
-						<field Name="expression" Type="list">dB20((OS("/PM0" "gm") / OS("/PM0" "gds")))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">14</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"(Aintr,p)dB"</field>
-						<field Name="inValidObject" Type="list">(nil "(Aintr,p)dB")</field>
-					</field>
-					<field Name="outputList_14" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"fT,n*Aintr,n"</field>
-						<field Name="expression" Type="list">((OS("/NM0" "gm") / (2 * pi * OS("/NM0" "cgg"))) * (OS("/NM0" "gm") / OS("/NM0" "gds")))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="symbol">t</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">15</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"fT,n*Aintr,n"</field>
-						<field Name="inValidObject" Type="list">(nil "fT,n*Aintr,n")</field>
-					</field>
-					<field Name="outputList_15" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"fT,p*Aintr,p"</field>
-						<field Name="expression" Type="list">((OS("/PM0" "gm") / (2 * pi * OS("/PM0" "cgg"))) * (OS("/PM0" "gm") / OS("/PM0" "gds")))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">16</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"fT,p*Aintr,p"</field>
-						<field Name="inValidObject" Type="list">(nil "fT,p*Aintr,p")</field>
-					</field>
-					<field Name="outputList_16" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"gm,n vs gm/ID,n"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/NM0" "gmoverid") ?y OS("/NM0" "gm"))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">17</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"gm,n vs gm/ID,n"</field>
-						<field Name="inValidObject" Type="list">nil</field>
-					</field>
-					<field Name="outputList_17" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"gm,p vs gm/ID,p"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/PM0" "gmoverid") ?y OS("/PM0" "gm"))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">18</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"gm,p vs gm/ID,p"</field>
-						<field Name="inValidObject" Type="list">(nil "gm,p vs gm/ID,p")</field>
-					</field>
-					<field Name="outputList_18" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"fT,n vs gm/ID,n"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/NM0" "gmoverid") ?y (OS("/NM0" "gm") / (2 * pi * OS("/NM0" "cgg"))))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">21</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"fT,n vs gm/ID,n"</field>
-						<field Name="inValidObject" Type="list">nil</field>
-					</field>
-					<field Name="outputList_19" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"fT,p vs gm/ID,p"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/PM0" "gmoverid") ?y (OS("/PM0" "gm") / (2 * pi * OS("/PM0" "cgg"))))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">22</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"fT,p vs gm/ID,p"</field>
-						<field Name="inValidObject" Type="list">nil</field>
-					</field>
-					<field Name="outputList_20" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"Aintr,n vs gm/ID,n"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/NM0" "gmoverid") ?y dB20((OS("/NM0" "gm") / OS("/NM0" "gds"))))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">23</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"Aintr,n vs gm/ID,n"</field>
-						<field Name="inValidObject" Type="list">nil</field>
-					</field>
-					<field Name="outputList_21" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"Aintr,p vs gm/ID,p"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/PM0" "gmoverid") ?y dB20((OS("/PM0" "gm") / OS("/PM0" "gds"))))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">24</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"Aintr,p vs gm/ID,p"</field>
-						<field Name="inValidObject" Type="list">nil</field>
-					</field>
-					<field Name="outputList_22" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"fT,n*Aintr,n vs gm/ID,n"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/NM0" "gmoverid") ?y ((OS("/NM0" "gm") / (2 * pi * OS("/NM0" "cgg"))) * (OS("/NM0" "gm") / OS("/NM0" "gds"))))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">25</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"fT,n*Aintr,n vs gm/ID,n"</field>
-						<field Name="inValidObject" Type="list">nil</field>
-					</field>
-					<field Name="outputList_23" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"fT,p*Aintr,p vs gm/ID,p"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/PM0" "gmoverid") ?y ((OS("/PM0" "gm") / (2 * pi * OS("/PM0" "cgg"))) * (OS("/PM0" "gm") / OS("/PM0" "gds"))))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">26</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"fT,p*Aintr,p vs gm/ID,p"</field>
-						<field Name="inValidObject" Type="list">nil</field>
-					</field>
-					<field Name="outputList_24" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"ID,n/W vs gm/ID,n"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/NM0" "gmoverid") ?y (IS("/NM0/D") / VAR("Wn")))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="symbol">t</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">27</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"ID,n/W vs gm/ID,n"</field>
-						<field Name="inValidObject" Type="list">(nil "ID,n/W vs gm/ID,n")</field>
-					</field>
-					<field Name="outputList_25" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"|ID,p|/W vs gm/ID,p"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/PM0" "gmoverid") ?y (abs(IS("/PM0/D")) / VAR("Wp")))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">28</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"|ID,p|/W vs gm/ID,p"</field>
-						<field Name="inValidObject" Type="list">(nil "|ID,p|/W vs gm/ID,p")</field>
-					</field>
-					<field Name="outputList_26" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"1/gds,n vs gm/ID,n"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/NM0" "gmoverid") ?y (1 / OS("/NM0" "gds")))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">19</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"1/gds,n vs gm/ID,n"</field>
-						<field Name="inValidObject" Type="list">nil</field>
-					</field>
-					<field Name="outputList_27" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"1/gds,p vs gm/ID,p"</field>
-						<field Name="expression" Type="list">waveVsWave(?x OS("/PM0" "gmoverid") ?y (1 / OS("/PM0" "gds")))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="symbol">point</field>
-						<field Name="displayIt" Type="symbol">t</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="updatedScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="list">nil</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="implicit" Type="list">nil</field>
-						<field Name="index" Type="fixnum">20</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="waveSpec" Type="list">nil</field>
-						<field Name="uniqueName" Type="string">"1/gds,p vs gm/ID,p"</field>
+						<field Name="uniqueName" Type="string">"OP(\"/I0/M2\" \"css\")"</field>
 						<field Name="inValidObject" Type="list">nil</field>
 					</field>
 				</field>
@@ -1384,7 +771,7 @@
 					<field Name="savePcell" Type="string">""</field>
 					<field Name="subcktoppoint" Type="list">nil</field>
 					<field Name="pcellFrame" Type="string">""</field>
-					<field Name="saveBySubcktInstances" Type="list">(("&lt;Click_here_to_add_an_Instance&gt;" (t "") (nil "") (nil "") nil nil nil (nil "") "all" ""))</field>
+					<field Name="saveBySubcktInstances" Type="list">(("&lt;Click_here_to_add_an_Instance&gt;" "" "" "" "" "" "" "" "all" ""))</field>
 					<field Name="saveBySubcktFrame" Type="string">""</field>
 					<field Name="allcapInfo" Type="list">nil</field>
 					<field Name="extremesInfo" Type="list">nil</field>
@@ -1399,7 +786,7 @@
 					<field Name="pwr" Type="string">""</field>
 					<field Name="nestlvl" Type="string">""</field>
 					<field Name="currents" Type="string">"all"</field>
-					<field Name="useprobes" Type="string">""</field>
+					<field Name="useprobes" Type="string">"yes"</field>
 					<field Name="subcktprobelvl" Type="string">""</field>
 					<field Name="saveahdlvars" Type="string">""</field>
 					<field Name="timewindFrame" Type="string">""</field>
@@ -1711,10 +1098,10 @@
 				<field Name="pzEnableAll" Type="list">nil</field>
 				<field Name="flow" Type="string">""</field>
 				<field Name="vabstol" Type="string">"1e-6"</field>
-				<field Name="pzSeverity" Type="string">"None"</field>
+				<field Name="pzSeverity" Type="string">""</field>
 				<field Name="scalefactor" Type="string">""</field>
 				<field Name="tnom" Type="string">"27"</field>
-				<field Name="tranSeverity" Type="string">"None"</field>
+				<field Name="tranSeverity" Type="string">""</field>
 				<field Name="simstat" Type="string">""</field>
 				<field Name="gmin" Type="string">"1e-12"</field>
 				<field Name="noiseOffType" Type="list">(nil nil nil nil nil)</field>
@@ -1728,7 +1115,7 @@
 				<field Name="residualtol" Type="string">""</field>
 				<field Name="dcOpEnableAll" Type="list">nil</field>
 				<field Name="notation" Type="string">""</field>
-				<field Name="dcOpSeverity" Type="string">"None"</field>
+				<field Name="dcOpSeverity" Type="string">""</field>
 				<field Name="icpriority" Type="string">""</field>
 				<field Name="noiseOnType" Type="list">(nil nil nil nil nil)</field>
 				<field Name="ahdllint" Type="string">""</field>
@@ -1744,7 +1131,7 @@
 				<field Name="dcEnableAll" Type="list">nil</field>
 				<field Name="dcAddtionalArguments" Type="string">""</field>
 				<field Name="vdsatmod" Type="string">""</field>
-				<field Name="dcSeverity" Type="string">"None"</field>
+				<field Name="dcSeverity" Type="string">""</field>
 				<field Name="nthreads" Type="string">""</field>
 				<field Name="rebuild_matrix" Type="string">""</field>
 				<field Name="ivth_vdsmin" Type="string">""</field>
@@ -1764,7 +1151,7 @@
 				<field Name="acAddtionalArguments" Type="string">""</field>
 				<field Name="auto_minductor" Type="string">""</field>
 				<field Name="diagnose" Type="string">""</field>
-				<field Name="acSeverity" Type="string">"None"</field>
+				<field Name="acSeverity" Type="string">""</field>
 				<field Name="rabsclamp" Type="string">""</field>
 				<field Name="title" Type="string">""</field>
 				<field Name="enable_dcsweep_op_info" Type="string">"no"</field>
@@ -1802,7 +1189,7 @@
 				<field Name="nport_default_passivity" Type="string">""</field>
 				<field Name="spDisableAll" Type="list">nil</field>
 				<field Name="checklimitskipsubs" Type="string">""</field>
-				<field Name="noiseSeverity" Type="string">"None"</field>
+				<field Name="noiseSeverity" Type="string">""</field>
 				<field Name="temp" Type="string">"27"</field>
 				<field Name="nport_default_interp" Type="string">""</field>
 				<field Name="maxnotestologfile" Type="string">""</field>
@@ -1811,7 +1198,7 @@
 				<field Name="checklimitdest" Type="string">"psf"</field>
 				<field Name="narrate" Type="string">""</field>
 				<field Name="scalem" Type="string">"1.0"</field>
-				<field Name="spSeverity" Type="string">"None"</field>
+				<field Name="spSeverity" Type="string">""</field>
 				<field Name="nportunusedportrmin" Type="string">""</field>
 				<field Name="maxnotes" Type="string">"5"</field>
 				<field Name="nportbbsfittedfiledir" Type="string">""</field>
@@ -1902,60 +1289,6 @@
 				<field Name="spectreFXAdvancedTab" Type="list">((nil "&lt;Click_To_Add&gt;" "" "Instance" nil))</field>
 				<field Name="presetOverride" Type="list">nil</field>
 			</partition>
-		</component>
-		<component Name="variables" Type="skillTable">variableTable
-			<field Name="saveComponent" Type="skillList">
-				<field Name="saveComponent_0" Type="defstruct">sevVariableStruct
-					<field Name="name" Type="string">"Ln"</field>
-					<field Name="expression" Type="string">"100n"</field>
-					<field Name="index" Type="fixnum">1</field>
-				</field>
-				<field Name="saveComponent_1" Type="defstruct">sevVariableStruct
-					<field Name="name" Type="string">"Wn"</field>
-					<field Name="expression" Type="string">"21u"</field>
-					<field Name="index" Type="fixnum">2</field>
-				</field>
-				<field Name="saveComponent_2" Type="defstruct">sevVariableStruct
-					<field Name="name" Type="string">"Lp"</field>
-					<field Name="expression" Type="string">"100n"</field>
-					<field Name="index" Type="fixnum">3</field>
-				</field>
-				<field Name="saveComponent_3" Type="defstruct">sevVariableStruct
-					<field Name="name" Type="string">"Wp"</field>
-					<field Name="expression" Type="string">"1u"</field>
-					<field Name="index" Type="fixnum">4</field>
-				</field>
-				<field Name="saveComponent_4" Type="defstruct">sevVariableStruct
-					<field Name="name" Type="string">"VSBp"</field>
-					<field Name="expression" Type="string">"0"</field>
-					<field Name="index" Type="fixnum">5</field>
-				</field>
-				<field Name="saveComponent_5" Type="defstruct">sevVariableStruct
-					<field Name="name" Type="string">"VSBn"</field>
-					<field Name="expression" Type="string">"0"</field>
-					<field Name="index" Type="fixnum">6</field>
-				</field>
-				<field Name="saveComponent_6" Type="defstruct">sevVariableStruct
-					<field Name="name" Type="string">"VGSn"</field>
-					<field Name="expression" Type="string">"500m"</field>
-					<field Name="index" Type="fixnum">7</field>
-				</field>
-				<field Name="saveComponent_7" Type="defstruct">sevVariableStruct
-					<field Name="name" Type="string">"VGSp"</field>
-					<field Name="expression" Type="string">"-500m"</field>
-					<field Name="index" Type="fixnum">8</field>
-				</field>
-				<field Name="saveComponent_8" Type="defstruct">sevVariableStruct
-					<field Name="name" Type="string">"VDSn"</field>
-					<field Name="expression" Type="string">"500m"</field>
-					<field Name="index" Type="fixnum">9</field>
-				</field>
-				<field Name="saveComponent_9" Type="defstruct">sevVariableStruct
-					<field Name="name" Type="string">"VDSp"</field>
-					<field Name="expression" Type="string">"-500m"</field>
-					<field Name="index" Type="fixnum">10</field>
-				</field>
-			</field>
 		</component>
 	</Test>
 </statedb>

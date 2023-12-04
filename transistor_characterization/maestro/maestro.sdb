@@ -7,26 +7,26 @@
 		</corners>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test>mmWaveICDesignProject_transistor_characterization_1
+			<test enabled="1">mmWaveICDesignProject_transistor_characterization_1
 				<tool>ADE</tool>
 				<tooloptions>
-					<option>cell
-						<value>transistor_characterization</value>
-					</option>
-					<option>lib
-						<value>mmWaveICDesignProject</value>
-					</option>
 					<option>path
 						<value>$AXL_SETUPDB_DIR</value>
 					</option>
 					<option>sim
 						<value>spectre</value>
 					</option>
-					<option>view
-						<value>schematic</value>
-					</option>
 					<option>state
 						<value>active</value>
+					</option>
+					<option>cell
+						<value>transistor_characterization</value>
+					</option>
+					<option>lib
+						<value>Project</value>
+					</option>
+					<option>view
+						<value>schematic</value>
 					</option>
 				</tooloptions>
 				<vars>
@@ -79,17 +79,8 @@
 			<test enabled="1">mmWaveICDesignProject_transistor_characterization_2
 				<tool>ADE</tool>
 				<tooloptions>
-					<option>cell
-						<value>transistor_characterization</value>
-					</option>
-					<option>lib
-						<value>mmWaveICDesignProject</value>
-					</option>
 					<option>sim
 						<value>spectre</value>
-					</option>
-					<option>view
-						<value>schematic</value>
 					</option>
 					<option>path
 						<value>$AXL_SETUPDB_DIR</value>
@@ -97,34 +88,43 @@
 					<option>state
 						<value>active</value>
 					</option>
+					<option>cell
+						<value>transistor_characterization</value>
+					</option>
+					<option>lib
+						<value>Project</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
 				</tooloptions>
 				<vars>
 					<var>Ln
 						<value>100n</value>
 					</var>
-					<var>Wn
-						<value>1u</value>
-					</var>
 					<var>Lp
 						<value>100n</value>
-					</var>
-					<var>Wp
-						<value>1u</value>
-					</var>
-					<var>VGSn
-						<value>1</value>
 					</var>
 					<var>VDSn
 						<value>1</value>
 					</var>
-					<var>VSp
+					<var>VGSn
+						<value>1</value>
+					</var>
+					<var>VSDp
 						<value>1</value>
 					</var>
 					<var>VSGp
 						<value>1</value>
 					</var>
-					<var>VSDp
+					<var>VSp
 						<value>1</value>
+					</var>
+					<var>Wn
+						<value>1u</value>
+					</var>
+					<var>Wp
+						<value>1u</value>
 					</var>
 				</vars>
 				<origoptions>
@@ -162,7 +162,7 @@
 		</checksasserts>
 		<plottingoptions>
 			<plottingoption>waveformtemplate
-				<value>(None)</value>
+				<value></value>
 			</plottingoption>
 			<plottingoption>plottingmode
 				<value>Replace</value>
@@ -174,7 +174,7 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>useMaestroPlottingTemplate
-				<value>yes</value>
+				<value>no</value>
 			</plottingoption>
 			<plottingoption>allplottingtemplates
 				<value></value>
@@ -188,7 +188,10 @@
 				<value>(None)</value>
 			</exploreroption>
 		</exploreroptions>
-		<disabledtests></disabledtests>
+		<disabledtests>
+			<test>mmWaveICDesignProject_transistor_characterization_1</test>
+			<test>mmWaveICDesignProject_transistor_characterization_2</test>
+		</disabledtests>
 		<incrementalsimulationoptions>
 			<incrementalSimulation>0</incrementalSimulation>
 		</incrementalsimulationoptions>

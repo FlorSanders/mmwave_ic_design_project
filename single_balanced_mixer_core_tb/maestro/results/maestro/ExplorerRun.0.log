@@ -1,0 +1,25 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Dec  3 19:32:17 2023 
+Best design point: 1
+Design specs: 
+	Project_single_balanced_mixer_core_tb_1	corner	Nominal - 
+	OP("/I0/M1" "id")		3.171m
+	OP("/I0/M1" "gm")		31.42m
+	OP("/I0/M1" "gmoverid")		9.911
+	OP("/I0/M1" "cgg")		48.52f
+	OP("/I0/M1" "cdd")		13.06f
+	OP("/I0/M1" "css")		34.15f
+	OP("/I0/M2" "id")		1.587m
+	OP("/I0/M2" "gm")		16.4m
+	OP("/I0/M2" "gmoverid")		10.34
+	OP("/I0/M2" "cgg")		23.99f
+	OP("/I0/M2" "cdd")		6.463f
+	OP("/I0/M2" "css")		16.5f
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Sun Dec  3 19:32:45 2023 
