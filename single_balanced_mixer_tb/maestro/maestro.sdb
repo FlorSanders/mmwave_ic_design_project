@@ -7,66 +7,37 @@
 		</corners>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test>DAMSIC_2023_gmoverid_plots_1
+			<test>Project_single_balanced_mixer_core_tb_1
 				<tool>ADE</tool>
 				<tooloptions>
-					<option>sim
-						<value>spectre</value>
-					</option>
-					<option>path
-						<value>$AXL_SETUPDB_DIR</value>
-					</option>
-					<option>state
-						<value>active</value>
-					</option>
 					<option>cell
-						<value>gmoverid_plots</value>
+						<value>single_balanced_mixer_tb</value>
 					</option>
 					<option>lib
 						<value>Project</value>
 					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
 					<option>view
 						<value>schematic</value>
 					</option>
+					<option>state
+						<value>active</value>
+					</option>
 				</tooloptions>
-				<vars>
-					<var>Ln
-						<value>100n</value>
-					</var>
-					<var>Wn
-						<value>28u</value>
-					</var>
-					<var>Lp
-						<value>100n</value>
-					</var>
-					<var>Wp
-						<value>1u</value>
-					</var>
-					<var>VSBp
-						<value>0</value>
-					</var>
-					<var>VSBn
-						<value>0</value>
-					</var>
-					<var>VGSn
-						<value>500m</value>
-					</var>
-					<var>VGSp
-						<value>-500m</value>
-					</var>
-					<var>VDSn
-						<value>500m</value>
-					</var>
-					<var>VDSp
-						<value>-500m</value>
-					</var>
-				</vars>
 				<origoptions>
 					<option>cell
-						<value>gmoverid_plots</value>
+						<value>single_balanced_mixer_tb</value>
 					</option>
 					<option>lib
-						<value>DAMSIC_2023</value>
+						<value>Project</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
 					</option>
 					<option>sim
 						<value>spectre</value>
@@ -75,92 +46,100 @@
 						<value>schematic</value>
 					</option>
 				</origoptions>
+				<vars>
+					<var>flo
+						<value>60e9</value>
+					</var>
+					<var>frf
+						<value>65e9</value>
+					</var>
+					<var>plo
+						<value>-15</value>
+					</var>
+					<var>prf
+						<value>-30</value>
+					</var>
+					<var>pacmag
+						<value>0</value>
+					</var>
+				</vars>
 				<outputs>
-					<output>IDn
+					<output>OP("/I0/M2" "gmoverid")
 						<evalType>point</evalType>
 					</output>
-					<output>|IDp|
+					<output>M1 ID
 						<evalType>point</evalType>
 					</output>
-					<output>gm,n
+					<output>M1 gm
 						<evalType>point</evalType>
 					</output>
-					<output>gm,p
+					<output>M1 gm/ID
 						<evalType>point</evalType>
 					</output>
-					<output>gm/ID,p
+					<output>M1 Cgg
 						<evalType>point</evalType>
 					</output>
-					<output>gm/ID,n
+					<output>M1 Cdd
 						<evalType>point</evalType>
 					</output>
-					<output>fT,n
+					<output>M1 Css
 						<evalType>point</evalType>
 					</output>
-					<output>fT,p
+					<output>M2 ID
 						<evalType>point</evalType>
 					</output>
-					<output>(Aintr,n)dB
+					<output>M2  gm
 						<evalType>point</evalType>
 					</output>
-					<output>(Aintr,p)dB
+					<output>M2 gm/ID
 						<evalType>point</evalType>
 					</output>
-					<output>fT,n*Aintr,n
+					<output>M2 CGG
 						<evalType>point</evalType>
 					</output>
-					<output>fT,p*Aintr,p
+					<output>M2 CDD
 						<evalType>point</evalType>
 					</output>
-					<output>gm,n vs gm/ID,n
+					<output>M2 CSS
 						<evalType>point</evalType>
 					</output>
-					<output>gm,p vs gm/ID,p
+					<output>nil
 						<evalType>point</evalType>
 					</output>
-					<output>fT,n vs gm/ID,n
+					<output>M3 ID
 						<evalType>point</evalType>
 					</output>
-					<output>fT,p vs gm/ID,p
+					<output>M3 gm
 						<evalType>point</evalType>
 					</output>
-					<output>Aintr,n vs gm/ID,n
+					<output>M3 gm/ID
 						<evalType>point</evalType>
 					</output>
-					<output>Aintr,p vs gm/ID,p
+					<output>M3 CGG
 						<evalType>point</evalType>
 					</output>
-					<output>fT,n*Aintr,n vs gm/ID,n
+					<output>M3 CDD
 						<evalType>point</evalType>
 					</output>
-					<output>fT,p*Aintr,p vs gm/ID,p
+					<output>M3 CSS
 						<evalType>point</evalType>
 					</output>
-					<output>ID,n/W vs gm/ID,n
+					<output>M4 ID
 						<evalType>point</evalType>
 					</output>
-					<output>|ID,p|/W vs gm/ID,p
+					<output>M4 gm
 						<evalType>point</evalType>
 					</output>
-					<output>OS("/NM0" "gm")
+					<output>M4 gm/ID
 						<evalType>point</evalType>
 					</output>
-					<output>Vth,n
+					<output>M4 CGG
 						<evalType>point</evalType>
 					</output>
-					<output>|Vth,p|
+					<output>M4 CDD
 						<evalType>point</evalType>
 					</output>
-					<output>1/gds,n
-						<evalType>point</evalType>
-					</output>
-					<output>1/gds,p
-						<evalType>point</evalType>
-					</output>
-					<output>1/gds,n vs gm/ID,n
-						<evalType>point</evalType>
-					</output>
-					<output>1/gds,p vs gm/ID,p
+					<output>M4 CSS
 						<evalType>point</evalType>
 					</output>
 				</outputs>
@@ -175,7 +154,7 @@
 		</extensions>
 		<currentmode>Single Run, Sweeps and Corners</currentmode>
 		<checksasserts netlist="0">
-			<test netlist="0" netlistscope="all">DAMSIC_2023_gmoverid_plots_1</test>
+			<test netlist="0" netlistscope="all">Project_single_balanced_mixer_core_tb_1</test>
 		</checksasserts>
 		<plottingoptions>
 			<plottingoption>waveformtemplate
@@ -199,16 +178,10 @@
 			<plottingoption>defaultplottingtemplate
 				<value></value>
 			</plottingoption>
-			<plottingoption>autoplotmode
-				<value>Replace</value>
-			</plottingoption>
 		</plottingoptions>
 		<exploreroptions>
 			<exploreroption>waveformtemplate
 				<value>(None)</value>
-			</exploreroption>
-			<exploreroption>autoplotmode
-				<value>Replace</value>
 			</exploreroption>
 		</exploreroptions>
 		<incrementalsimsetup>
@@ -218,17 +191,14 @@
 			<copyreferenceresults>1</copyreferenceresults>
 		</incrementalsimsetup>
 		<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
-		<parameters>
-			<location>DAMSIC_2023/gmoverid_plots/schematic/NM0</location>
-		</parameters>
-		<vars>
-			<var>Ln
-				<value>45n</value>
-				<dependentTests>
-					<dependentTest omitted="0">DAMSIC_2023_gmoverid_plots_1</dependentTest>
-				</dependentTests>
-			</var>
-		</vars>
+		<resultsviews>
+			<resultsview>outputSetup</resultsview>
+		</resultsviews>
+		<useresultsviewfilters>
+			<useresultsviewfilter>outputSetup
+				<value></value>
+			</useresultsviewfilter>
+		</useresultsviewfilters>
 	</active>
 	<history>History
 		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
@@ -239,66 +209,37 @@
 				</corners>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>DAMSIC_2023_gmoverid_plots_1
+					<test>Project_single_balanced_mixer_core_tb_1
 						<tool>ADE</tool>
 						<tooloptions>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ExplorerRun.0</value>
-							</option>
 							<option>cell
-								<value>gmoverid_plots</value>
+								<value>single_balanced_mixer_tb</value>
 							</option>
 							<option>lib
 								<value>Project</value>
 							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
 							<option>view
 								<value>schematic</value>
 							</option>
+							<option>state
+								<value>ExplorerRun.0</value>
+							</option>
 						</tooloptions>
-						<vars>
-							<var>Ln
-								<value>100n</value>
-							</var>
-							<var>Wn
-								<value>28u</value>
-							</var>
-							<var>Lp
-								<value>100n</value>
-							</var>
-							<var>Wp
-								<value>1u</value>
-							</var>
-							<var>VSBp
-								<value>0</value>
-							</var>
-							<var>VSBn
-								<value>0</value>
-							</var>
-							<var>VGSn
-								<value>500m</value>
-							</var>
-							<var>VGSp
-								<value>-500m</value>
-							</var>
-							<var>VDSn
-								<value>500m</value>
-							</var>
-							<var>VDSp
-								<value>-500m</value>
-							</var>
-						</vars>
 						<origoptions>
 							<option>cell
-								<value>gmoverid_plots</value>
+								<value>single_balanced_mixer_tb</value>
 							</option>
 							<option>lib
-								<value>DAMSIC_2023</value>
+								<value>Project</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>sim
 								<value>spectre</value>
@@ -307,92 +248,100 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<vars>
+							<var>flo
+								<value>60e9</value>
+							</var>
+							<var>frf
+								<value>65e9</value>
+							</var>
+							<var>plo
+								<value>-15</value>
+							</var>
+							<var>prf
+								<value>-30</value>
+							</var>
+							<var>pacmag
+								<value>0</value>
+							</var>
+						</vars>
 						<outputs>
-							<output>IDn
+							<output>OP("/I0/M2" "gmoverid")
 								<evalType>point</evalType>
 							</output>
-							<output>|IDp|
+							<output>M1 ID
 								<evalType>point</evalType>
 							</output>
-							<output>gm,n
+							<output>M1 gm
 								<evalType>point</evalType>
 							</output>
-							<output>gm,p
+							<output>M1 gm/ID
 								<evalType>point</evalType>
 							</output>
-							<output>gm/ID,p
+							<output>M1 Cgg
 								<evalType>point</evalType>
 							</output>
-							<output>gm/ID,n
+							<output>M1 Cdd
 								<evalType>point</evalType>
 							</output>
-							<output>fT,n
+							<output>M1 Css
 								<evalType>point</evalType>
 							</output>
-							<output>fT,p
+							<output>M2 ID
 								<evalType>point</evalType>
 							</output>
-							<output>(Aintr,n)dB
+							<output>M2  gm
 								<evalType>point</evalType>
 							</output>
-							<output>(Aintr,p)dB
+							<output>M2 gm/ID
 								<evalType>point</evalType>
 							</output>
-							<output>fT,n*Aintr,n
+							<output>M2 CGG
 								<evalType>point</evalType>
 							</output>
-							<output>fT,p*Aintr,p
+							<output>M2 CDD
 								<evalType>point</evalType>
 							</output>
-							<output>gm,n vs gm/ID,n
+							<output>M2 CSS
 								<evalType>point</evalType>
 							</output>
-							<output>gm,p vs gm/ID,p
+							<output>nil
 								<evalType>point</evalType>
 							</output>
-							<output>fT,n vs gm/ID,n
+							<output>M3 ID
 								<evalType>point</evalType>
 							</output>
-							<output>fT,p vs gm/ID,p
+							<output>M3 gm
 								<evalType>point</evalType>
 							</output>
-							<output>Aintr,n vs gm/ID,n
+							<output>M3 gm/ID
 								<evalType>point</evalType>
 							</output>
-							<output>Aintr,p vs gm/ID,p
+							<output>M3 CGG
 								<evalType>point</evalType>
 							</output>
-							<output>fT,n*Aintr,n vs gm/ID,n
+							<output>M3 CDD
 								<evalType>point</evalType>
 							</output>
-							<output>fT,p*Aintr,p vs gm/ID,p
+							<output>M3 CSS
 								<evalType>point</evalType>
 							</output>
-							<output>ID,n/W vs gm/ID,n
+							<output>M4 ID
 								<evalType>point</evalType>
 							</output>
-							<output>|ID,p|/W vs gm/ID,p
+							<output>M4 gm
 								<evalType>point</evalType>
 							</output>
-							<output>OS("/NM0" "gm")
+							<output>M4 gm/ID
 								<evalType>point</evalType>
 							</output>
-							<output>Vth,n
+							<output>M4 CGG
 								<evalType>point</evalType>
 							</output>
-							<output>|Vth,p|
+							<output>M4 CDD
 								<evalType>point</evalType>
 							</output>
-							<output>1/gds,n
-								<evalType>point</evalType>
-							</output>
-							<output>1/gds,p
-								<evalType>point</evalType>
-							</output>
-							<output>1/gds,n vs gm/ID,n
-								<evalType>point</evalType>
-							</output>
-							<output>1/gds,p vs gm/ID,p
+							<output>M4 CSS
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -407,7 +356,7 @@
 				</extensions>
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<checksasserts netlist="0">
-					<test netlist="0" netlistscope="all">DAMSIC_2023_gmoverid_plots_1</test>
+					<test netlist="0" netlistscope="all">Project_single_balanced_mixer_core_tb_1</test>
 				</checksasserts>
 				<plottingoptions>
 					<plottingoption>plottype
@@ -487,9 +436,6 @@
 					<exploreroption>waveformtemplate
 						<value>(None)</value>
 					</exploreroption>
-					<exploreroption>autoplotmode
-						<value>Replace</value>
-					</exploreroption>
 				</exploreroptions>
 				<incrementalsimsetup>
 					<useincremental>0</useincremental>
@@ -498,39 +444,37 @@
 					<copyreferenceresults>1</copyreferenceresults>
 				</incrementalsimsetup>
 				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
-				<parameters>
-					<location>DAMSIC_2023/gmoverid_plots/schematic/NM0</location>
-				</parameters>
-				<vars>
-					<var>Ln
-						<value>45n</value>
-						<dependentTests>
-							<dependentTest omitted="0">DAMSIC_2023_gmoverid_plots_1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
+				<resultsviews>
+					<resultsview>outputSetup</resultsview>
+				</resultsviews>
+				<useresultsviewfilters>
+					<useresultsviewfilter>outputSetup
+						<value></value>
+					</useresultsviewfilter>
+				</useresultsviewfilters>
 				<runnabletests>
-					<test>DAMSIC_2023_gmoverid_plots_1</test>
+					<test>Project_single_balanced_mixer_core_tb_1</test>
 				</runnabletests>
 				<disabledtests></disabledtests>
+				<vars></vars>
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Dec 5 09:23:34 2023</timestamp>
-			<uuid>{c71b3849-7cb3-4fb0-8c8f-91565b622da1}</uuid>
-			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
+			<timestamp>Dec 5 10:06:05 2023</timestamp>
+			<uuid>{3b7fdcbb-8a2b-4426-9f8a-8e5ce369600c}</uuid>
+			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadpc17_fps2116_092334290</localpsfdir>
-			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0</simdir>
+			<localpsfdir>/tmp/cadpc17_fps2116_100605400</localpsfdir>
+			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0</psfdir>
+			<simdir>/user/stud/fall23/fps2116/simulation/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<loggingdatabasedir>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/gmoverid_plots/maestro/results/maestro</loggingdatabasedir>
-			<runlog>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0.log</runlog>
+			<loggingdatabasedir>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_core_tb_gain/maestro/results/maestro</loggingdatabasedir>
+			<runlog>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
