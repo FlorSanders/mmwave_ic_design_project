@@ -54,7 +54,7 @@
 						<value>0</value>
 					</var>
 					<var>plo
-						<value>-15</value>
+						<value>-5</value>
 					</var>
 					<var>prf
 						<value>-40</value>
@@ -140,6 +140,9 @@
 						<evalType>point</evalType>
 					</output>
 					<output>M4 CSS
+						<evalType>point</evalType>
+					</output>
+					<output>Output Noise Separation
 						<evalType>point</evalType>
 					</output>
 				</outputs>
@@ -255,9 +258,12 @@
 			</useresultsviewfilter>
 		</useresultsviewfilters>
 		<disabledtests></disabledtests>
+		<incrementalsimulationoptions>
+			<incrementalSimulation>0</incrementalSimulation>
+		</incrementalsimulationoptions>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.0
 			<checkpoint>
 				<jobcontrolmode>LSCS</jobcontrolmode>
 				<corners>
@@ -284,7 +290,7 @@
 								<value>schematic</value>
 							</option>
 							<option>state
-								<value>ExplorerRun.0</value>
+								<value>Interactive.0</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -402,6 +408,289 @@
 							</output>
 						</outputs>
 					</test>
+					<test enabled="1">Project_single_balanced_mixer_tb_1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>single_balanced_mixer_tb</value>
+							</option>
+							<option>lib
+								<value>Project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.0</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>flo
+								<value>60G</value>
+							</var>
+							<var>frf
+								<value>65G</value>
+							</var>
+							<var>pacmag
+								<value>1</value>
+							</var>
+							<var>plo
+								<value>-15</value>
+							</var>
+							<var>prf
+								<value>-30</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>single_balanced_mixer_tb</value>
+							</option>
+							<option>lib
+								<value>Project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Project_single_balanced_mixer_core_tb_1</test>
+					<test netlist="0" netlistscope="all">Project_single_balanced_mixer_tb_1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<reusesaverunhist>0</reusesaverunhist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<resultsviews>
+					<resultsview>outputSetup</resultsview>
+				</resultsviews>
+				<useresultsviewfilters>
+					<useresultsviewfilter>outputSetup
+						<value></value>
+					</useresultsviewfilter>
+				</useresultsviewfilters>
+				<disabledtests></disabledtests>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Dec 7 08:48:03 2023</timestamp>
+			<uuid>{bc1d8ecf-5c6d-4302-b753-5977c2df2d70}</uuid>
+			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadpc17_fps2116_084803166</localpsfdir>
+			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/single_balanced_mixer_tb/maestro/results/maestro/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Project/single_balanced_mixer_tb/maestro/results/maestro/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<loggingdatabasedir>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro</loggingdatabasedir>
+			<runlog>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
+			<checkpoint>
+				<jobcontrolmode>LSCS</jobcontrolmode>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Project_single_balanced_mixer_core_tb_1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>single_balanced_mixer_tb</value>
+							</option>
+							<option>lib
+								<value>Project</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>state
+								<value>ExplorerRun.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>single_balanced_mixer_tb</value>
+							</option>
+							<option>lib
+								<value>Project</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<vars>
+							<var>flo
+								<value>60e9</value>
+							</var>
+							<var>frf
+								<value>0</value>
+							</var>
+							<var>plo
+								<value>-5</value>
+							</var>
+							<var>prf
+								<value>-40</value>
+							</var>
+							<var>pacmag
+								<value>1</value>
+							</var>
+						</vars>
+						<outputs>
+							<output>OP("/I0/M2" "gmoverid")
+								<evalType>point</evalType>
+							</output>
+							<output>M1 ID
+								<evalType>point</evalType>
+							</output>
+							<output>M1 gm
+								<evalType>point</evalType>
+							</output>
+							<output>M1 gm/ID
+								<evalType>point</evalType>
+							</output>
+							<output>M1 Cgg
+								<evalType>point</evalType>
+							</output>
+							<output>M1 Cdd
+								<evalType>point</evalType>
+							</output>
+							<output>M1 Css
+								<evalType>point</evalType>
+							</output>
+							<output>M2 ID
+								<evalType>point</evalType>
+							</output>
+							<output>M2  gm
+								<evalType>point</evalType>
+							</output>
+							<output>M2 gm/ID
+								<evalType>point</evalType>
+							</output>
+							<output>M2 CGG
+								<evalType>point</evalType>
+							</output>
+							<output>M2 CDD
+								<evalType>point</evalType>
+							</output>
+							<output>M2 CSS
+								<evalType>point</evalType>
+							</output>
+							<output>nil
+								<evalType>point</evalType>
+							</output>
+							<output>M3 ID
+								<evalType>point</evalType>
+							</output>
+							<output>M3 gm
+								<evalType>point</evalType>
+							</output>
+							<output>M3 gm/ID
+								<evalType>point</evalType>
+							</output>
+							<output>M3 CGG
+								<evalType>point</evalType>
+							</output>
+							<output>M3 CDD
+								<evalType>point</evalType>
+							</output>
+							<output>M3 CSS
+								<evalType>point</evalType>
+							</output>
+							<output>M4 ID
+								<evalType>point</evalType>
+							</output>
+							<output>M4 gm
+								<evalType>point</evalType>
+							</output>
+							<output>M4 gm/ID
+								<evalType>point</evalType>
+							</output>
+							<output>M4 CGG
+								<evalType>point</evalType>
+							</output>
+							<output>M4 CDD
+								<evalType>point</evalType>
+							</output>
+							<output>M4 CSS
+								<evalType>point</evalType>
+							</output>
+							<output>Output Noise Separation
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
 				</tests>
 				<extensions>
 					<extension>Parasitics
@@ -510,6 +799,9 @@
 					</useresultsviewfilter>
 				</useresultsviewfilters>
 				<disabledtests></disabledtests>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
 				<runnabletests>
 					<test>Project_single_balanced_mixer_core_tb_1</test>
 				</runnabletests>
@@ -517,8 +809,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Dec 5 19:53:37 2023</timestamp>
-			<uuid>{829ccd49-5655-430f-b4c4-1bdc5f2e4640}</uuid>
+			<timestamp>Dec 8 08:48:40 2023</timestamp>
+			<uuid>{42e2efe7-0cc9-4ba3-8443-74623650b151}</uuid>
 			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -526,7 +818,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadpc26_fps2116_195337691</localpsfdir>
+			<localpsfdir>/tmp/cadpc17_fps2116_084840974</localpsfdir>
 			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
