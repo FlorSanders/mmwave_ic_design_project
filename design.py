@@ -9,6 +9,8 @@ from constants import C_GS_per_W, C_DB_per_W, C_GD_per_W
 f_0 = 60e9 # Hz
 omega_0 = 2 * np.pi * f_0 # rad / s
 Vdd = 1.2 # V
+Q_L = 10
+Q_C = 10
 
 # %% Port Matching Specs
 R_RF = 50 # Ohm
@@ -38,8 +40,8 @@ print(f"{C_GS_M1 =  :.6e}")
 print(f"{C_GD_M1 =  :.6e}")
 print(f"{C_DB_M1 =  :.6e}")
 
-L1_eq = 1 / (omega_0**2 * C_GS_M1) # H
-print(f"{L1_eq * 1e12 = }")
+L1 = 1 / (omega_0**2 * C_GS_M1) # H
+print(f"{L1 * 1e12 = }")
 
 L2 = R_RF * C_GS_M1 / gm1 # H
 print(f"{L2 * 1e12 = }")
@@ -92,6 +94,8 @@ W4 = ID4 / ID_over_W4
 print(f"{W4 * 1e6 = }")
 
 # %% 1. Fix input impedance to 50 ohms by first tuning L2 for real part & then picking L1 for imaginary part
+L1 = 420e-12
+L2 = 75e-12
 
 # %% 2. Tune L0 to Fight M0 drain capacitance
 C_GG_M1 = 11.91e-15
@@ -105,14 +109,32 @@ C_SS_M2 = 8.473e-15
 C_p0 = C_DD_M1 + 2 * C_SS_M2
 L0 = 1 / (omega_0**2 * C_p0)
 print(f"{L0 * 1e12 = }")
+L0 = 350e-12
 
-# %%
-L5 = 220 / omega_0 / 2
-print(f"{L5 = }")
+print(f"{1/(1j * omega_0 * C_GG_M1) = }")
 
-# %%
-C = 1e-14
-print(f"{1 / (omega_0 * C) = }")
-print(f"{1 / (2 * np.pi * 1e9 * C) = }")
+# %% Compute series resistance of the inductors for given Q values 
+L1 = 450e-12
+L2 = 50e-12
+L0 = 350e-12
+
+R_L1 = omega_0 * L1 / Q_L
+R_L2 = omega_0 * L2 / Q_L
+R_L0 = omega_0 * L0 / Q_L
+
+print(f"{R_L1 = }")
+print(f"{R_L2 = }")
+print(f"{R_L0 = }")
+
+
+# %% Compute shunt/series resistance of the capacitors for given Q values
+C1 = 1e-9
+Z_C1 = 1 / (1j * omega_0 * C1)
+Rp_C1 = Q_C / (omega_0 * C1)
+Rs_C1 = 1 / (Q_C * omega_0 * C1)
+
+print(f"{Rp_C1 = }")
+print(f"{Rs_C1 = }")
+print(f"{Z_C1 = }")
 
 # %%
