@@ -51,10 +51,10 @@
 						<value>60e9</value>
 					</var>
 					<var>frf
-						<value>0</value>
+						<value>61e9</value>
 					</var>
 					<var>plo
-						<value>-5</value>
+						<value>5</value>
 					</var>
 					<var>prf
 						<value>-40</value>
@@ -600,10 +600,10 @@
 								<value>60e9</value>
 							</var>
 							<var>frf
-								<value>0</value>
+								<value>61e9</value>
 							</var>
 							<var>plo
-								<value>-5</value>
+								<value>5</value>
 							</var>
 							<var>prf
 								<value>-40</value>
@@ -814,8 +814,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Dec 8 18:35:41 2023</timestamp>
-			<uuid>{76103bd7-3013-4b3e-af41-f4e528e98d1a}</uuid>
+			<timestamp>Dec 11 12:06:27 2023</timestamp>
+			<uuid>{59788619-937c-4821-8557-392b0ace4d7c}</uuid>
 			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -823,7 +823,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadpc03_fps2116_183541632</localpsfdir>
+			<localpsfdir>/tmp/cadpc25_fps2116_120627279</localpsfdir>
 			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
