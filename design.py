@@ -137,4 +137,38 @@ print(f"{Rp_C1 = }")
 print(f"{Rs_C1 = }")
 print(f"{Z_C1 = }")
 
+# %% Biasing
+IDb0 = 50e-6
+gm_over_IDb0 = 5
+ID_over_Wb0 = 170 # Get from Cadence
+Wb0 = IDb0 / ID_over_Wb0
+
+print(f"{Wb0 * 1e6 = }")
+
+# %%
+IDb1 = IDb0
+gm_over_IDb1 = 5
+ID_over_Wb1 = 59 # Get from Cadence
+Wb1 = IDb1 / ID_over_Wb1
+
+print(f"{Wb1 * 1e6 = }")
+
+
+# %%
+
+Wb2 = Wb1 * 4
+Wb2p = W_M1 / 10
+print(f"{Wb2 * 1e6 = }")
+print(f"{Wb2p * 1e6 = }")
+
+Wb3 = Wb1
+Wb3p = W_M2 / 10
+print(f"{Wb2 * 1e6 = }")
+print(f"{Wb2p * 1e6 = }")
+
+Rb3 = 450e-3 / IDb1
+print(f"{Rb3 = }")
+
+# %%
+
 # %%
