@@ -1,14 +1,14 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Mon Dec 11 16:36:24 2023 
+Current time: Thu Dec 14 11:38:48 2023 
 Best design point: 1
 Design specs: 
 	DAMSIC_2023_gmoverid_plots_1	corner	Nominal - 
 Design parameters: 
-	Ln		100n
+	Ln		500n
 
 ExplorerRun.0
 Number of points completed: 1
 Number of simulation errors: 0
 ExplorerRun.0 completed. 
-Current time: Mon Dec 11 16:36:48 2023 
+Current time: Thu Dec 14 11:39:26 2023 

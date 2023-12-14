@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<statedb ICVersion="IC6.1.8-64b.500.27" modifiedTime="12/14/2023 09:40:08" version="5">active
+<statedb ICVersion="IC6.1.8-64b.500.27" modifiedTime="12/14/2023 09:44:23" version="5">Interactive.1
 	<Test Name="Project_single_balanced_mixer_core_tb_1">
 		<component Name="adeInfo" Type="skillTable">adeinfo
 			<field Name="designInfo" Type="list">("Project" "single_balanced_mixer_tb" "schematic" "spectre")</field>
@@ -3017,6 +3017,7 @@
 						<field Name="type" Type="list">nil</field>
 						<field Name="areaTable" Type="list">nil</field>
 						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
 						<field Name="plot" Type="symbol">t</field>
 						<field Name="save" Type="list">nil</field>
 						<field Name="march" Type="list">nil</field>

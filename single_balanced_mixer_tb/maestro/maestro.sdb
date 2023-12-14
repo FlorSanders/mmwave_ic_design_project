@@ -51,13 +51,13 @@
 						<value>60e9</value>
 					</var>
 					<var>frf
-						<value>61e9</value>
+						<value>0</value>
 					</var>
 					<var>plo
 						<value>5</value>
 					</var>
 					<var>prf
-						<value>-40</value>
+						<value>-50</value>
 					</var>
 					<var>pacmag
 						<value>1</value>
@@ -180,7 +180,7 @@
 						<value>1</value>
 					</var>
 					<var>plo
-						<value>-5</value>
+						<value>5</value>
 					</var>
 					<var>prf
 						<value>-30</value>
@@ -548,7 +548,7 @@
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.1
 			<checkpoint>
 				<jobcontrolmode>LSCS</jobcontrolmode>
 				<corners>
@@ -575,7 +575,7 @@
 								<value>schematic</value>
 							</option>
 							<option>state
-								<value>ExplorerRun.0</value>
+								<value>Interactive.1</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -600,13 +600,13 @@
 								<value>60e9</value>
 							</var>
 							<var>frf
-								<value>61e9</value>
+								<value>0</value>
 							</var>
 							<var>plo
 								<value>5</value>
 							</var>
 							<var>prf
-								<value>-40</value>
+								<value>-50</value>
 							</var>
 							<var>pacmag
 								<value>1</value>
@@ -692,6 +692,213 @@
 								<evalType>point</evalType>
 							</output>
 							<output>Output Noise Separation
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">Project_single_balanced_mixer_tb_1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>single_balanced_mixer_tb</value>
+							</option>
+							<option>lib
+								<value>Project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.1</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>flo
+								<value>60G</value>
+							</var>
+							<var>frf
+								<value>60.1G</value>
+							</var>
+							<var>pacmag
+								<value>1</value>
+							</var>
+							<var>plo
+								<value>5</value>
+							</var>
+							<var>prf
+								<value>-30</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>single_balanced_mixer_tb</value>
+							</option>
+							<option>lib
+								<value>Project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>1dB Compression Point Plot
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">Project_single_balanced_mixer_core_tb_1</test>
+					<test netlist="0" netlistscope="all">Project_single_balanced_mixer_tb_1</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value>(None)</value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<reusesaverunhist>0</reusesaverunhist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<resultsviews>
+					<resultsview>outputSetup</resultsview>
+				</resultsviews>
+				<useresultsviewfilters>
+					<useresultsviewfilter>outputSetup
+						<value></value>
+					</useresultsviewfilter>
+				</useresultsviewfilters>
+				<disabledtests></disabledtests>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Dec 14 09:44:23 2023</timestamp>
+			<uuid>{ae105a21-57e0-4e65-8b3f-7ad1d9a79c57}</uuid>
+			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/cadpc11_fps2116_094423939</localpsfdir>
+			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/single_balanced_mixer_tb/maestro/results/maestro/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Project/single_balanced_mixer_tb/maestro/results/maestro/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<loggingdatabasedir>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro</loggingdatabasedir>
+			<runlog>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
+			<checkpoint>
+				<jobcontrolmode>LSCS</jobcontrolmode>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Project_single_balanced_mixer_tb_1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>single_balanced_mixer_tb</value>
+							</option>
+							<option>lib
+								<value>Project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ExplorerRun.0</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>flo
+								<value>60G</value>
+							</var>
+							<var>frf
+								<value>60.1G</value>
+							</var>
+							<var>pacmag
+								<value>1</value>
+							</var>
+							<var>plo
+								<value>5</value>
+							</var>
+							<var>prf
+								<value>-30</value>
+							</var>
+						</vars>
+						<origoptions>
+							<option>cell
+								<value>single_balanced_mixer_tb</value>
+							</option>
+							<option>lib
+								<value>Project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>1dB Compression Point Plot
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -808,14 +1015,14 @@
 					<incrementalSimulation>0</incrementalSimulation>
 				</incrementalsimulationoptions>
 				<runnabletests>
-					<test>Project_single_balanced_mixer_core_tb_1</test>
+					<test>Project_single_balanced_mixer_tb_1</test>
 				</runnabletests>
 				<vars></vars>
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Dec 11 12:06:27 2023</timestamp>
-			<uuid>{59788619-937c-4821-8557-392b0ace4d7c}</uuid>
+			<timestamp>Dec 14 12:33:10 2023</timestamp>
+			<uuid>{386b6e52-572c-492f-8d7c-c5407bbc0b9f}</uuid>
 			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -823,7 +1030,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadpc25_fps2116_120627279</localpsfdir>
+			<localpsfdir>/tmp/cadpc11_fps2116_123310660</localpsfdir>
 			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/Project/single_balanced_mixer_tb/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
