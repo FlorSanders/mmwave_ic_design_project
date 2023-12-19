@@ -884,8 +884,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Dec 11 15:52:30 2023</timestamp>
-			<uuid>{a194aa67-887c-4d6c-801a-b2395eec9f55}</uuid>
+			<timestamp>Dec 19 09:55:48 2023</timestamp>
+			<uuid>{cd7a75f6-7e90-43d4-9c3a-001b1d27d59e}</uuid>
 			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/lna_and_mixer_and_vco_tb/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -893,7 +893,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadpc25_fps2116_155230099</localpsfdir>
+			<localpsfdir>/tmp/cadpc24_fps2116_095548853</localpsfdir>
 			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/lna_and_mixer_and_vco_tb/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/Project/lna_and_mixer_and_vco_tb/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
