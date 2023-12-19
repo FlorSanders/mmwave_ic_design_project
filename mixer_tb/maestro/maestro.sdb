@@ -844,7 +844,7 @@
 				</corners>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>Project_single_balanced_mixer_core_tb_1
+					<test enabled="1">Project_single_balanced_mixer_tb_1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -853,28 +853,42 @@
 							<option>lib
 								<value>Project</value>
 							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
 							<option>sim
 								<value>spectre</value>
 							</option>
 							<option>view
 								<value>schematic</value>
 							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
 							<option>state
 								<value>ExplorerRun.0</value>
 							</option>
 						</tooloptions>
+						<vars>
+							<var>flo
+								<value>60G</value>
+							</var>
+							<var>frf
+								<value>60.1G</value>
+							</var>
+							<var>pacmag
+								<value>1</value>
+							</var>
+							<var>plo
+								<value>5</value>
+							</var>
+							<var>prf
+								<value>-30</value>
+							</var>
+						</vars>
 						<origoptions>
 							<option>cell
 								<value>mixer_tb</value>
 							</option>
 							<option>lib
 								<value>Project</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>sim
 								<value>spectre</value>
@@ -883,103 +897,8 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
-						<vars>
-							<var>flo
-								<value>60e9</value>
-							</var>
-							<var>frf
-								<value>0</value>
-							</var>
-							<var>plo
-								<value>5</value>
-							</var>
-							<var>prf
-								<value>-50</value>
-							</var>
-							<var>pacmag
-								<value>1</value>
-							</var>
-						</vars>
 						<outputs>
-							<output>OP("/I0/M2" "gmoverid")
-								<evalType>point</evalType>
-							</output>
-							<output>M1 ID
-								<evalType>point</evalType>
-							</output>
-							<output>M1 gm
-								<evalType>point</evalType>
-							</output>
-							<output>M1 gm/ID
-								<evalType>point</evalType>
-							</output>
-							<output>M1 Cgg
-								<evalType>point</evalType>
-							</output>
-							<output>M1 Cdd
-								<evalType>point</evalType>
-							</output>
-							<output>M1 Css
-								<evalType>point</evalType>
-							</output>
-							<output>M2 ID
-								<evalType>point</evalType>
-							</output>
-							<output>M2  gm
-								<evalType>point</evalType>
-							</output>
-							<output>M2 gm/ID
-								<evalType>point</evalType>
-							</output>
-							<output>M2 CGG
-								<evalType>point</evalType>
-							</output>
-							<output>M2 CDD
-								<evalType>point</evalType>
-							</output>
-							<output>M2 CSS
-								<evalType>point</evalType>
-							</output>
-							<output>nil
-								<evalType>point</evalType>
-							</output>
-							<output>M3 ID
-								<evalType>point</evalType>
-							</output>
-							<output>M3 gm
-								<evalType>point</evalType>
-							</output>
-							<output>M3 gm/ID
-								<evalType>point</evalType>
-							</output>
-							<output>M3 CGG
-								<evalType>point</evalType>
-							</output>
-							<output>M3 CDD
-								<evalType>point</evalType>
-							</output>
-							<output>M3 CSS
-								<evalType>point</evalType>
-							</output>
-							<output>M4 ID
-								<evalType>point</evalType>
-							</output>
-							<output>M4 gm
-								<evalType>point</evalType>
-							</output>
-							<output>M4 gm/ID
-								<evalType>point</evalType>
-							</output>
-							<output>M4 CGG
-								<evalType>point</evalType>
-							</output>
-							<output>M4 CDD
-								<evalType>point</evalType>
-							</output>
-							<output>M4 CSS
-								<evalType>point</evalType>
-							</output>
-							<output>Output Noise Separation
+							<output>1dB Compression Point Plot
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -1096,14 +1015,14 @@
 					<incrementalSimulation>0</incrementalSimulation>
 				</incrementalsimulationoptions>
 				<runnabletests>
-					<test>Project_single_balanced_mixer_core_tb_1</test>
+					<test>Project_single_balanced_mixer_tb_1</test>
 				</runnabletests>
 				<vars></vars>
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Dec 19 16:11:42 2023</timestamp>
-			<uuid>{5e20e32b-26c7-4076-b031-9f952c63dcc1}</uuid>
+			<timestamp>Dec 19 18:01:25 2023</timestamp>
+			<uuid>{4f751e67-69e5-4f05-84fd-4d74d476c99c}</uuid>
 			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/mixer_tb/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -1111,7 +1030,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadpc11_fps2116_161142429</localpsfdir>
+			<localpsfdir>/tmp/cadpc11_fps2116_180125846</localpsfdir>
 			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/mixer_tb/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/Project/mixer_tb/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
