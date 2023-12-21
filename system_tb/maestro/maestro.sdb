@@ -51,7 +51,7 @@
 						<value>0</value>
 					</var>
 					<var>prf
-						<value>-100</value>
+						<value>-30</value>
 					</var>
 					<var>pacmag
 						<value>1</value>
@@ -100,43 +100,10 @@
 					<output>nil
 						<evalType>point</evalType>
 					</output>
-					<output>M3 ID
-						<evalType>point</evalType>
-					</output>
-					<output>M3 gm
-						<evalType>point</evalType>
-					</output>
-					<output>M3 gm/ID
-						<evalType>point</evalType>
-					</output>
-					<output>M3 CGG
-						<evalType>point</evalType>
-					</output>
-					<output>M3 CDD
-						<evalType>point</evalType>
-					</output>
-					<output>M3 CSS
-						<evalType>point</evalType>
-					</output>
-					<output>M4 ID
-						<evalType>point</evalType>
-					</output>
-					<output>M4 gm
-						<evalType>point</evalType>
-					</output>
-					<output>M4 gm/ID
-						<evalType>point</evalType>
-					</output>
-					<output>M4 CGG
-						<evalType>point</evalType>
-					</output>
-					<output>M4 CDD
-						<evalType>point</evalType>
-					</output>
-					<output>M4 CSS
-						<evalType>point</evalType>
-					</output>
 					<output>Output Noise Separation
+						<evalType>point</evalType>
+					</output>
+					<output>Conversion Gain
 						<evalType>point</evalType>
 					</output>
 				</outputs>
@@ -171,7 +138,7 @@
 						<value>1</value>
 					</var>
 					<var>prf
-						<value>-100</value>
+						<value>-70</value>
 					</var>
 				</vars>
 				<origoptions>
@@ -190,6 +157,9 @@
 				</origoptions>
 				<outputs>
 					<output>1dB Compression Voltage
+						<evalType>point</evalType>
+					</output>
+					<output>Voltage Gain
 						<evalType>point</evalType>
 					</output>
 				</outputs>
@@ -546,7 +516,7 @@
 				</corners>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test enabled="1">Project_single_balanced_mixer_tb_1
+					<test>Project_single_balanced_mixer_core_tb_1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -555,36 +525,28 @@
 							<option>lib
 								<value>Project</value>
 							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
 							<option>sim
 								<value>spectre</value>
 							</option>
 							<option>view
 								<value>schematic</value>
 							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
 							<option>state
 								<value>ExplorerRun.0</value>
 							</option>
 						</tooloptions>
-						<vars>
-							<var>frf
-								<value>60.1G</value>
-							</var>
-							<var>pacmag
-								<value>1</value>
-							</var>
-							<var>prf
-								<value>-100</value>
-							</var>
-						</vars>
 						<origoptions>
 							<option>cell
 								<value>mixer_tb</value>
 							</option>
 							<option>lib
 								<value>Project</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>sim
 								<value>spectre</value>
@@ -593,8 +555,64 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<vars>
+							<var>frf
+								<value>0</value>
+							</var>
+							<var>prf
+								<value>-30</value>
+							</var>
+							<var>pacmag
+								<value>1</value>
+							</var>
+						</vars>
 						<outputs>
-							<output>1dB Compression Voltage
+							<output>OP("/I0/M2" "gmoverid")
+								<evalType>point</evalType>
+							</output>
+							<output>M1 ID
+								<evalType>point</evalType>
+							</output>
+							<output>M1 gm
+								<evalType>point</evalType>
+							</output>
+							<output>M1 gm/ID
+								<evalType>point</evalType>
+							</output>
+							<output>M1 Cgg
+								<evalType>point</evalType>
+							</output>
+							<output>M1 Cdd
+								<evalType>point</evalType>
+							</output>
+							<output>M1 Css
+								<evalType>point</evalType>
+							</output>
+							<output>M2 ID
+								<evalType>point</evalType>
+							</output>
+							<output>M2  gm
+								<evalType>point</evalType>
+							</output>
+							<output>M2 gm/ID
+								<evalType>point</evalType>
+							</output>
+							<output>M2 CGG
+								<evalType>point</evalType>
+							</output>
+							<output>M2 CDD
+								<evalType>point</evalType>
+							</output>
+							<output>M2 CSS
+								<evalType>point</evalType>
+							</output>
+							<output>nil
+								<evalType>point</evalType>
+							</output>
+							<output>Output Noise Separation
+								<evalType>point</evalType>
+							</output>
+							<output>Conversion Gain
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -713,14 +731,14 @@
 				<jobpolicyname>Maestro Default</jobpolicyname>
 				<netlistjobpolicyname>Netlisting Default</netlistjobpolicyname>
 				<runnabletests>
-					<test>Project_single_balanced_mixer_tb_1</test>
+					<test>Project_single_balanced_mixer_core_tb_1</test>
 				</runnabletests>
 				<vars></vars>
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Dec 19 21:16:42 2023</timestamp>
-			<uuid>{06ff122b-2bcd-4635-b3b1-cf6d6b4290cd}</uuid>
+			<timestamp>Dec 21 11:14:06 2023</timestamp>
+			<uuid>{43a14df9-b968-4220-8c8d-a01352b1f63e}</uuid>
 			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/system_tb/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -728,7 +746,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadpc17_fps2116_211642829</localpsfdir>
+			<localpsfdir>/tmp/cadpc23_fps2116_111406231</localpsfdir>
 			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/system_tb/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/Project/system_tb/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
