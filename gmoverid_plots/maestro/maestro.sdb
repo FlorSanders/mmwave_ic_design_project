@@ -31,10 +31,10 @@
 				</tooloptions>
 				<vars>
 					<var>Ln
-						<value>500n</value>
+						<value>100n</value>
 					</var>
 					<var>Wn
-						<value>1.1u</value>
+						<value>13.5u</value>
 					</var>
 					<var>Lp
 						<value>500n</value>
@@ -263,10 +263,10 @@
 						</tooloptions>
 						<vars>
 							<var>Ln
-								<value>500n</value>
+								<value>100n</value>
 							</var>
 							<var>Wn
-								<value>1.1u</value>
+								<value>13.5u</value>
 							</var>
 							<var>Lp
 								<value>500n</value>
@@ -516,8 +516,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Dec 14 11:38:46 2023</timestamp>
-			<uuid>{4cc098f2-e265-440a-9164-a260c74de2e6}</uuid>
+			<timestamp>Dec 20 16:12:44 2023</timestamp>
+			<uuid>{e491e19c-5e80-49ed-b6a1-5ad2a399b940}</uuid>
 			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -525,7 +525,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadpc11_fps2116_113846135</localpsfdir>
+			<localpsfdir>/tmp/cadpc01_fps2116_161244139</localpsfdir>
 			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/Project/gmoverid_plots/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
