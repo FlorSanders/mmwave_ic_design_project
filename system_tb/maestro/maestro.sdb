@@ -737,8 +737,8 @@
 				<allsweepsenabled>1</allsweepsenabled>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Dec 21 11:14:06 2023</timestamp>
-			<uuid>{43a14df9-b968-4220-8c8d-a01352b1f63e}</uuid>
+			<timestamp>Dec 22 10:28:30 2023</timestamp>
+			<uuid>{62436273-6683-400b-8159-61f49f7f8a26}</uuid>
 			<resultsname>/homes/user/stud/fall23/fps2116/Documents/mmWave/Project/system_tb/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -746,7 +746,7 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/cadpc23_fps2116_111406231</localpsfdir>
+			<localpsfdir>/tmp/cadpc20_fps2116_102830374</localpsfdir>
 			<psfdir>/homes/user/stud/fall23/fps2116/simulation/Project/system_tb/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/Project/system_tb/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
